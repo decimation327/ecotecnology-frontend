@@ -1,0 +1,38 @@
+<main>
+<app-nav></app-nav>
+<div class="contenedor">
+    
+    
+    <div class="imagen">
+        <img src="https://static.vecteezy.com/system/resources/previews/009/386/098/non_2x/calendar-icon-sign-symbol-design-free-png.png" alt="Imagen">
+      </div>
+    <div class="hijo">
+
+      <h2>Agendamiento de citas</h2>
+      <div class="formulario"  id="formulario" >
+        <form (submit)="generatePDF()">  
+          <label for="product">Producto:</label>
+          <input type="text" id="product" name="product">
+        
+          <label for="date">Fecha:</label>
+          <input type="date" id="date" name="date">
+        
+          <label for="time">Hora:</label>
+          <input type="time" id="time" name="time">
+        
+          <label for="electronicComponent">Componente Electrónico:</label>
+          <input type="text" id="electronicComponent" name="electronicComponent">
+        
+          <label for="damage">Descripción del daño:</label>
+          <textarea id="damage" name="damage"></textarea>
+        
+          <label for="address">Dirección:</label>
+          <input type="text" id="address" name="address">
+        
+          <button type="submit" (submit)="generatePDF()">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>
+</main>

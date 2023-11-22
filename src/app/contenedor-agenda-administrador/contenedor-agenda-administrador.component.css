@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+main {
+    background-color: white;
+    margin: 0 auto;
+    width: 1900px;
+    height: 100%;
+    border: 0.1px solid grey;
+}
+
+.material-icons {
+    font-size: 16px;
+}
+
+.datatable-container {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #2a3338;
+    border-radius: 3px;
+    color: white;
+    width: 700px;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-bottom: 250px;
+    margin-top: 350px;
+}
+
+.datatable-container .header-tools {
+    border-bottom: solid 1px rgb(64, 68, 73);
+    padding: 12px;
+    display: flex;
+    align-items: baseline;
+}
+
+.datatable-container .header-tools .search {
+    width: 30%;
+}
+
+.datatable-container .header-tools .search .search-input {
+    width: 100%;
+    background-color: rgb(64, 68, 73);
+    display: block;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: solid 1px rgb(64, 68, 73);
+    color: white;
+}
+
+.datatable-container .header-tools .tools {
+    width: 70%;
+}
+
+.datatable-container .header-tools .tools ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.datatable-container .header-tools .tools ul li {
+    display: inline-block;
+    margin: 0 2px;
+    align-items: baseline;
+}
+
+.datatable-container .footer-tools {
+    padding: 12px;
+    display: flex;
+    align-items: baseline;
+}
+
+.datatable-container .footer-tools .list-itens {
+    width: 50%;
+}
+
+.datatable-container .footer-tools .pages {
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+}
+
+.datatable-container .footer-tools .pages ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.datatable-container .footer-tools .pages ul li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.datatable-container .footer-tools .pages ul li button,
+.datatable-container .header-tools .tools ul li button {
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.datatable-container .footer-tools .pages ul li button:hover,
+.datatable-container .header-tools .tools ul li button:hover {
+    background: #3282b8;
+    color: white;
+}
+
+.datatable-container .footer-tools .pages ul li span.active {
+    background-color: #3282b8;
+    border-radius: 3px;
+}
+
+.datatable-container .footer-tools .pages ul li button,
+.datatable-container .footer-tools .pages ul li span,
+.datatable-container .header-tools .tools ul li button {
+    padding: 6px 12px;
+}
+
+.datatable-container .datatable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatable-container .datatable,
+.datatable-container .datatable th,
+.datatable-container .datatable td {
+    padding: 12px;
+}
+
+.datatable-container .datatable th {
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 1px rgb(64, 68, 73);
+}
+
+.datatable-container .datatable td {
+    border-bottom: solid 1px rgb(64, 68, 73);
+}
+
+.datatable-container .datatable tbody tr:nth-child(even) {
+    background-color: rgb(64, 68, 73);
+}
+
+.datatable-container .datatable tbody tr:hover {
+    background-color: #3282b8;
+}
+
+.datatable-container .datatable tbody tr .available::after,
+.datatable-container .datatable tbody tr .away::after,
+.datatable-container .datatable tbody tr .offline::after {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.datatable-container .datatable tbody tr .available::after {
+    content: 'Available';
+    color: greenyellow;
+}
+
+.datatable-container .datatable tbody tr .away::after {
+    content: 'Away';
+    color: lightsalmon;
+}
+
+.datatable-container .datatable tbody tr .offline::after {
+    content: 'Offline';
+    color: lightgray;
+}
+
+.datatable-container .datatable tbody tr .available::before,
+.datatable-container .datatable tbody tr .away::before,
+.datatable-container .datatable tbody tr .offline::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.datatable-container .datatable tbody tr .available::before {
+    background-color: greenyellow;
+}
+
+.datatable-container .datatable tbody tr .away::before {
+    background-color: lightsalmon;
+}
+
+.datatable-container .datatable .offline::before {
+    background-color: lightgray;
+}
