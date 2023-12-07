@@ -17,6 +17,7 @@ import { PaginaPrincipalAdministradorComponent } from './pagina-principal-admini
 import { ContenedorDetalleProductoComponent } from './contenedor-detalle-producto/contenedor-detalle-producto.component';
 import { NavAdministradorComponent } from './nav-administrador/nav-administrador.component';
 import { NavUsuarioComponent } from './nav-usuario/nav-usuario.component';
+import { CarritoComponent } from './carrito/carrito.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { NavUsuarioComponent } from './nav-usuario/nav-usuario.component';
     PaginaPrincipalAdministradorComponent,
     ContenedorDetalleProductoComponent,
     NavAdministradorComponent,
-    NavUsuarioComponent
+    NavUsuarioComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,
