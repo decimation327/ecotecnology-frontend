@@ -7,6 +7,7 @@ import {PaginaPrincipalAdministradorComponent} from'./pagina-principal-administr
 import { PaginaPrincipalUsuarioComponent } from './pagina-principal-usuario/pagina-principal-usuario.component';
 import { ContenedorAgendaUsuarioComponent } from './contenedor-agenda-usuario/contenedor-agenda-usuario.component';
 import { RegistroLoginComponent } from './registro-login/registro-login.component';
+import { CarritoComponent } from './carrito/carrito.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path:"Usuario",component:PaginaPrincipalUsuarioComponent},
   {path:"Agenda-Administrador",component:ContenedorAgendaAdministradorComponent},
   {path:"Agenda-Usuario",component:ContenedorAgendaUsuarioComponent},
+  {path: "Carrito", component:CarritoComponent},
   { path: '**', redirectTo: 'home' } 
 ];
 
